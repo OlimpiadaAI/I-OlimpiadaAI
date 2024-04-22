@@ -3,7 +3,7 @@
 Witamy w repozytorium z zadaniami Olimpiady Sztucznej Inteligencji. Olimpiada ta jest skierowana do uczniów szkół średnich w Polsce, którzy są zainteresowani sztuczną inteligencją. Celem jest zwiększenie zainteresowania AI oraz wyłonienie drużyny na Międzynarodową Olimpiadę Sztucznej Inteligencji.
 
 <p align="center">
-  <img src="https://github.com/OlimpiadaAI/OlimpiadaAI/assets/150927210/66d4b9dc-c761-41c4-b128-1c67c39d6b74" width="40%">
+  <img src="https://raw.githubusercontent.com/OlimpiadaAI/I-OlimpiadaAI/main/logo_ioai.png" width="40%">
 </p>
 
 ## Informacje ogólne
