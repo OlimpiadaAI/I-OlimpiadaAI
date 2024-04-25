@@ -41,7 +41,23 @@ pip install -r OlimpiadaAI/requirements.txt
 Repozytorium korzysta z następujących zasobów objętych licencjami:
 
 - **Składnica zależnościowa** - Zasób dostępny na licencji GNU General Public License wersja 3 (GPLv3). Więcej informacji można znaleźć [tutaj](https://zil.ipipan.waw.pl/Sk%C5%82adnica). Zbiór danych użyty w zadaniu `syntax_trees` stanowi utwór pochodny.
-- **HerBERT base cased** - Model dostępny dostępny [tu](https://huggingface.co/allegro/herbert-base-cased), Mroczkowski, R., Rybak, P., Wróblewska, A., & Gawlik, I. (2021). *HerBERT: Efficiently pretrained transformer-based language model for Polish*. arXiv preprint arXiv:2105.01735.
+- **HerBERT base cased** - Model dostępny dostępny [tu](https://huggingface.co/allegro/herbert-base-cased),
+```
+@inproceedings{mroczkowski-etal-2021-herbert,
+    title = "{H}er{BERT}: Efficiently Pretrained Transformer-based Language Model for {P}olish",
+    author = "Mroczkowski, Robert  and
+          Rybak, Piotr  and
+          Wr{\\'o}blewska, Alina  and
+          Gawlik, Ireneusz",
+    booktitle = "Proceedings of the 8th Workshop on Balto-Slavic Natural Language Processing",
+    month = apr,
+    year = "2021",
+    address = "Kiyv, Ukraine",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2021.bsnlp-1.1",
+    pages = "1--10",
+}
+```
 - **Zbiory danych generowane przy użyciu PyBullet** - objęte licencją MIT, szczegóły [tutaj](https://github.com/hebaishi/pybullet/blob/master/LICENSE).
 - **Dall-E i Stable Diffusion** - pełne prawa do użycia i sprzedaży wyników, więcej informacji w [licencji](https://github.com/CompVis/stable-diffusion/blob/main/LICENSE).
 - **Zbiory danych generowane przy użyciu SCGAN** - więcej informacji na [IEEE](https://ieeexplore.ieee.org/document/8476290) oraz w [repozytorium GitHub](https://github.com/gauss-clb/SCGAN).
