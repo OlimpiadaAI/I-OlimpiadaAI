@@ -50,11 +50,11 @@ if not TRAIN:
     # load function `evaluate_model`
     parse_sentence_fn = vars.get("parse_sentence", None)
 
-    def score(root_placement, uuas):
+    def points(root_placement, uuas):
         def scale(x, lower=0.5, upper=0.85):
             scaled = min(max(x, lower), upper)
             return (scaled - lower) / (upper - lower)
-        return (scale(root_placement) + scale(uuas)) / 2
+        return (scale(root_placement) + scale(uuas))
 
     def evaluate_model(sentences, distance_model, depth_model, tokenizer, model):
         num = 0
@@ -73,7 +73,7 @@ if not TRAIN:
 
         print(f"UUAS: {uuas * 100:.3}%")
         print(f"Root placement: {root_placement * 100:.3}%")
-        print(f"Your score: {score(root_placement, uuas) * 100:.3}%")
+        print(f"Your score: {points(root_placement, uuas):.1}/2.0")
 
     # load test set
     test_sentences = read_conll("valid.conll")

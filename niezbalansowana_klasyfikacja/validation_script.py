@@ -3,8 +3,6 @@ import subprocess
 import re
 import os
 
-from typing import Self
-
 import glob
 import numpy as np
 import torch

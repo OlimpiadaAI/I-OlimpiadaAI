@@ -21,13 +21,13 @@ Zadania powinny być rozwiązane samodzielnie i przesłane do Komitetu Zadaniowe
 W ramach Olimpiady uczestnicy zmierzą się z następującymi wyzwaniami:
 - **Ataki adwersarialne** – Atak na konwolucyjną sieć neuronową.
 - **Niezbalansowana klasyfikacja** – Trening klasyfikatora na niezbalansowanych danych.
-- **Analiza zaleznosciowa** – Analiza składniowa zdań przy użyciu modelu HerBERT.
+- **Analiza zależnościowa** – Analiza składniowa zdań przy użyciu modelu HerBERT.
 - **Kwantyzacja kolorów** – Kwantyzacja kolorów w obrazach.
-- **Śledzenie obiektow** – Śledzenie obiektów w sekwencji wideo.
+- **Śledzenie obiektów** – Śledzenie obiektów w sekwencji wideo.
 - **Pruning** – Zmniejszanie liczby wag w sieciach neuronowych.
 - **Zagadki** – Odpowiadanie na pytania do tekstu źródłowego.
 
-## Regulamin i kryteria oceny
+## Środowisko
 
 Lista dopuszczalnych pakietów znajduje się w pliku `requirements.txt`. Rozwiązania będą testowane przy użyciu Pythona 3.11. Na potrzeby pracy nad zadaniami, zalecamy stworzenie środowiska wirtualnego
 ```
@@ -35,6 +35,9 @@ python3 -m venv oai_env
 source oai_env/bin/activate
 pip install -r OlimpiadaAI/requirements.txt
 ```
+
+## Kryteria oceny
+Oceny za zadania zostaną wyliczone na podstawie podanych w treściach zadań kryteriów. Za zadania będzie można zdobyć maksymalnie 1.0 (Ataki adwersarialne, Niezbalansowana klasyfikacja, Kwantyzacja kolorów), 1.5 (Śledzenie obiektow, Pruning, Zagadki) lub 2.0 punkty (Analiza zależnosciowa).
 
 ## Licencje
 
