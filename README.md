@@ -37,13 +37,13 @@ pip install -r OlimpiadaAI/requirements.txt
 ```
 
 ## Kryteria oceny
-Oceny za zadania zostaną wyliczone na podstawie podanych w treściach zadań kryteriów. Za zadania będzie można zdobyć maksymalnie 1.0 (Ataki adwersarialne, Niezbalansowana klasyfikacja, Kwantyzacja kolorów), 1.5 (Śledzenie obiektow, Pruning, Zagadki) lub 2.0 punkty (Analiza zależnosciowa).
+Oceny za zadania zostaną wyliczone na podstawie podanych w treściach zadań kryteriów. Za zadania będzie można zdobyć maksymalnie 1.0 (Ataki adwersarialne, Niezbalansowana klasyfikacja), 1.5 (Śledzenie obiektow, Pruning, Zagadki, Kwantyzacja kolorów) lub 2.0 punkty (Analiza zależnosciowa). Łącznie w pierwszym etapie jest do zdobycia 10 punktów.
 
 ## Licencje
 
 Repozytorium korzysta z następujących zasobów objętych licencjami:
 
-- **Składnica zależnościowa** - Zasób dostępny na licencji GNU General Public License wersja 3 (GPLv3). Więcej informacji można znaleźć [tutaj](https://zil.ipipan.waw.pl/Sk%C5%82adnica). Zbiór danych użyty w zadaniu `syntax_trees` stanowi utwór pochodny.
+- **Składnica zależnościowa** - Zasób dostępny na licencji GNU General Public License wersja 3 (GPLv3). Więcej informacji można znaleźć [tutaj](https://zil.ipipan.waw.pl/Sk%C5%82adnica). Zbiór danych użyty w zadaniu "Analiza zależnościowa" stanowi utwór pochodny.
 - **HerBERT base cased** - Model dostępny dostępny [tu](https://huggingface.co/allegro/herbert-base-cased),
 ```
 @inproceedings{mroczkowski-etal-2021-herbert,

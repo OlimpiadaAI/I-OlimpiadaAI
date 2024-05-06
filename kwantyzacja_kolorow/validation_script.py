@@ -93,7 +93,7 @@ def color_cost(img_quant):
     squared_distances = np.sum(differences**2, axis=2)
     costs = np.sqrt(np.min(squared_distances, axis=1))
 
-    return np.mean(costs), colors.shape[0]
+    return np.sum(costs), np.max(costs)
 
 
 # Całkowite kryterium zdefiniowane w treści zadania
@@ -102,9 +102,11 @@ def quantization_score(img, img_quant):
     assert img_quant.dtype == np.uint8
     
     mse_cost = mse(img, img_quant)
-    color_cost_val, colors_num = color_cost(img_quant)
-    print(f'MSE: {mse_cost:.4f}, color cost: {color_cost_val:.4f}, colors: {colors_num:.4f}')
-    return mse_cost / 24 + color_cost_val + colors_num / 24
+    total_color_cost, max_color_cost = color_cost(img_quant)
+    score = mse_cost * 2 + max_color_cost*(3/2) + total_color_cost *(4/3)
+    print(f'MSE: {mse_cost:.4f}, max_color_cost: {max_color_cost:.4f}, total_color_cost: {total_color_cost:.4f}')
+    print(f'Score: {score:.4f}')
+    return score
 ###############################################################################
 
 
