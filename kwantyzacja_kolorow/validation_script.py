@@ -76,6 +76,14 @@ class ImageDataset:
 
 # Zdefiniujmy kryterium oceny jakości kwantyzacji
 # Użyjemy do tego błędu średniokwadratowego (mean square error - MSE)
+######################### NIE ZMIENIAJ TEJ KOMÓRKI ##########################
+
+# Poniżej znajdziesz definicje MSE oraz kosztu użycia kolorów
+# Pamiętaj, żeby przy ewaluacji liczyć je w przestrzeni RGB, tzn. na wartościach całkowitych z przdziału [0, 255]
+# Skalowanie jest dopuszczalne tylko podczas treningu!
+
+# Zdefiniujmy kryterium oceny jakości kwantyzacji
+# Użyjemy do tego błędu średniokwadratowego (mean square error - MSE)
 def mse(img, img_quant):
   return ((img_quant.astype(np.float32) - img.astype(np.float32))**2).mean()
 
@@ -87,24 +95,27 @@ def color_cost(img_quant):
         [0, 0, 0], [0, 0, 255], [0, 255, 0], [0, 255, 255],
         [255, 0, 0], [255, 0, 255], [255, 255, 0], [255, 255, 255]
     ])
-    colors = np.unique(img_quant.reshape(-1,3), axis=0)
     
-    differences = colors[:, np.newaxis, :] - vertices[np.newaxis, :, :]
+    pixels = img_quant.reshape(-1,3)
+    
+
+    differences = pixels[:, np.newaxis, :] - vertices[np.newaxis, :, :]
     squared_distances = np.sum(differences**2, axis=2)
     costs = np.sqrt(np.min(squared_distances, axis=1))
 
-    return np.sum(costs), np.max(costs)
+    return np.mean(costs), np.max(costs)
 
 
 # Całkowite kryterium zdefiniowane w treści zadania
 def quantization_score(img, img_quant):
     assert img.dtype == np.uint8
     assert img_quant.dtype == np.uint8
-    
+    assert len(np.unique(img_quant.reshape(-1,3), axis=0)) == 37
+       
     mse_cost = mse(img, img_quant)
-    total_color_cost, max_color_cost = color_cost(img_quant)
-    score = mse_cost * 2 + max_color_cost*(3/2) + total_color_cost *(4/3)
-    print(f'MSE: {mse_cost:.4f}, max_color_cost: {max_color_cost:.4f}, total_color_cost: {total_color_cost:.4f}')
+    mean_color_cost, max_color_cost = color_cost(img_quant)
+    score = mse_cost * 2 + max_color_cost * 21 + mean_color_cost * 42
+    print(f'MSE: {mse_cost:.4f}, max_color_cost: {max_color_cost:.4f}, mean_color_cost: {mean_color_cost:.4f}')
     print(f'Score: {score:.4f}')
     return score
 ###############################################################################
