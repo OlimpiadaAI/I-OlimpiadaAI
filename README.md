@@ -1,50 +1,60 @@
-# Olimpiada Sztucznej Inteligencji
+# 1st Polish AI Olympiad
 
-Witamy w repozytorium z zadaniami Olimpiady Sztucznej Inteligencji. Olimpiada ta jest skierowana do uczniów szkół średnich w Polsce, którzy są zainteresowani sztuczną inteligencją. Celem jest zwiększenie zainteresowania AI oraz wyłonienie drużyny na Międzynarodową Olimpiadę Sztucznej Inteligencji.
+[![pl](https://img.shields.io/badge/lang-pl-red.svg)](https://github.com/OlimpiadaAI/I-OlimpiadaAI/blob/master/README.pl.md)
+
+Welcome to the repository for the 1st Polish Artificial Intelligence Olympiad. This Olympiad is aimed at high school students in Poland who are interested in artificial intelligence. The goal is to increase interest in AI and to select a team for the [International Olympiad in Artificial Intelligence](https://ioai-official.org/).
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/OlimpiadaAI/I-OlimpiadaAI/main/logo_ioai.png" width="40%">
 </p>
 
-## Informacje ogólne
+## General Information
 
-**Strona główna:** [Olimpiada Sztucznej Inteligencji](https://oai.cs.uni.wroc.pl/polski)
+**Homepage:** [Polish Artificial Intelligence Olympiad](https://oai.cs.uni.wroc.pl/english)
 
-Olimpiada jest dwuetapowa, z pierwszym etapem zdalnym trwającym od 22. kwietnia do 27. maja, w którym uczestnicy rozwiązują zadania w domu. Prosimy nie udostępniać rozwiązań przed zakończeniem konkursu. Regulamin konkursu jest dostępny na naszej stronie.
+The 1st edition of the Olympiad was conducted in two stages. The first stage was held from April 22nd to May 27th, and consisted of seven problems which participants solved at home. During the final bootcamp held from 15th to 21st June 2024, top-30 students participated in the final competition and in the implementation contest. The competition rules are available on our website.
 
-## Sposób oddawania zadań
+## Task Submission
 
-Zadania powinny być rozwiązane samodzielnie i przesłane do Komitetu Zadaniowego za pomocą specjalnej strony Olimpiady. Każde zadanie określa, jakie pliki należy przesyłać – najczęściej będzie to jeden plik Jupyter Notebook. Wszystkie prace będą oceniane automatycznie przez skrypt podobny do zawartego w zadaniu. Przed wysłaniem rozwiązania **każdy uczestnik powinien upewnić się, że działa ono na skrypcie walidacyjnym**.
+Tasks were solved independently and were submitted to the Task Committee via the Olympiad's special website. Each task specifies which files were to be submitted — most often, this is a single Jupyter Notebook file. All submissions were evaluated automatically by a script similar to the one provided in the task. Before submitting a solution, each participant checked that it passes the validation script.
 
-## Zadania
+## Tasks
 
-W ramach Olimpiady uczestnicy zmierzą się z następującymi wyzwaniami:
-- **Ataki adwersarialne** – Atak na konwolucyjną sieć neuronową.
-- **Niezbalansowana klasyfikacja** – Trening klasyfikatora na niezbalansowanych danych.
-- **Analiza zależnościowa** – Analiza składniowa zdań przy użyciu modelu HerBERT.
-- **Kwantyzacja kolorów** – Kwantyzacja kolorów w obrazach.
-- **Śledzenie obiektów** – Śledzenie obiektów w sekwencji wideo.
-- **Pruning** – Zmniejszanie liczby wag w sieciach neuronowych.
-- **Zagadki** – Odpowiadanie na pytania do tekstu źródłowego.
+As part of the 1st stage of the Olympiad, participants faced the following challenges:
+- **Adversarial Attacks** – Attack on a convolutional neural network.
+- **Imbalanced Classification** – Training a classifier on imbalanced data.
+- **Dependency Parsing** – Syntax analysis of sentences using the HerBERT model.
+- **Color Quantization** – Color quantization in images.
+- **Object Tracking** – Tracking objects in a video sequence.
+- **Pruning** – Reducing the number of weights in neural networks.
+- **Riddles** – Answering questions based on a source text.
 
-## Środowisko
+During the final competition, participants solved the following problems:
+- **Ciphers** – Machine learning algorithm to break the cipher.
+- **Anomaly detection** – Detection of images outside of the training set distribution.
+- **Self-supervised learning** – Time series classification.
 
-Lista dopuszczalnych pakietów znajduje się w pliku `requirements.txt`. Rozwiązania będą testowane przy użyciu Pythona 3.11. Na potrzeby pracy nad zadaniami, zalecamy stworzenie środowiska wirtualnego
+During the implementation contest **Machine translation**, participants were challenged with implementation and simplified reproduction of results from a scientific paper.
+
+## Environment
+
+The list of acceptable packages is in the `requirements.txt` file. Solutions were tested using Python 3.11. For the purpose of solving the tasks, we recommend creating a virtual environment:
 ```
 python3 -m venv oai_env
 source oai_env/bin/activate
 pip install -r OlimpiadaAI/requirements.txt
 ```
 
-## Kryteria oceny
-Oceny za zadania zostaną wyliczone na podstawie podanych w treściach zadań kryteriów. Za zadania będzie można zdobyć maksymalnie 1.0 (Ataki adwersarialne, Niezbalansowana klasyfikacja), 1.5 (Śledzenie obiektow, Pruning, Zagadki, Kwantyzacja kolorów) lub 2.0 punkty (Analiza zależnosciowa). Łącznie w pierwszym etapie jest do zdobycia 10 punktów.
+## Evaluation criteria
 
-## Licencje
+Scores for the tasks were calculated based on the criteria provided in the task descriptions. For solutions, participants could earn a maximum of 1.0 point (Adversarial Attacks, Imbalanced Classification), 1.5 points (Object Tracking, Pruning, Puzzles, Color Quantization), or 2.0 points (Dependency Parsing). A total of 10 points could be earned in the first stage. During the final competition, all problems were valued equally.
 
-Repozytorium korzysta z następujących zasobów objętych licencjami:
+## Licenses
 
-- **Składnica zależnościowa** - Zasób dostępny na licencji GNU General Public License wersja 3 (GPLv3). Więcej informacji można znaleźć [tutaj](https://zil.ipipan.waw.pl/Sk%C5%82adnica). Zbiór danych użyty w zadaniu "Analiza zależnościowa" stanowi utwór pochodny.
-- **HerBERT base cased** - Model dostępny dostępny [tu](https://huggingface.co/allegro/herbert-base-cased),
+The repository uses the following licensed resources:
+
+- **Dependency Corpus** - Resource available under the GNU General Public License version 3 (GPLv3). More information can be found [here](https://zil.ipipan.waw.pl/Sk%C5%82adnica). The dataset used in the "Dependency Parsing" task constitutes a derivative work.
+- **HerBERT base cased** - Model available [here](https://huggingface.co/allegro/herbert-base-cased),
 ```
 @inproceedings{mroczkowski-etal-2021-herbert,
     title = "{H}er{BERT}: Efficiently Pretrained Transformer-based Language Model for {P}olish",
@@ -61,12 +71,24 @@ Repozytorium korzysta z następujących zasobów objętych licencjami:
     pages = "1--10",
 }
 ```
-- **Zbiory danych generowane przy użyciu PyBullet** - objęte licencją MIT, szczegóły [tutaj](https://github.com/hebaishi/pybullet/blob/master/LICENSE).
-- **Dall-E i Stable Diffusion** - pełne prawa do użycia i sprzedaży wyników, więcej informacji w [licencji](https://github.com/CompVis/stable-diffusion/blob/main/LICENSE).
-- **Zbiory danych generowane przy użyciu SCGAN** - więcej informacji na [IEEE](https://ieeexplore.ieee.org/document/8476290) oraz w [repozytorium GitHub](https://github.com/gauss-clb/SCGAN).
+- **Datasets generated using PyBullet** - Licensed under MIT, details [here](https://github.com/hebaishi/pybullet/blob/master/LICENSE).
+- **Dall-E and Stable Diffusion** - Full rights for use and sale of results, more information in the [license](https://github.com/CompVis/stable-diffusion/blob/main/LICENSE).
+- **Datasets generated using SCGAN** - More information at [IEEE](https://ieeexplore.ieee.org/document/8476290) and in the [GitHub repository](https://github.com/gauss-clb/SCGAN).
+- During implementation contest, part of the final stage, students implemented 
+```
+@article{Bahdanau2014NeuralMT,
+  title={Neural Machine Translation by Jointly Learning to Align and Translate},
+  author={Dzmitry Bahdanau and Kyunghyun Cho and Yoshua Bengio},
+  journal={CoRR},
+  year={2014},
+  volume={abs/1409.0473},
+  url={https://api.semanticscholar.org/CorpusID:11212020}
+}
+```
 
-## Kontakt
+## Contact
 
-W razie pytań lub wątpliwości, prosimy o kontakt przez e-mail: [oai@cs.uni.wroc.pl](mailto:oai@cs.uni.wroc.pl).
+For questions or concerns, please contact us via email: [oai@cs.uni.wroc.pl](mailto:oai@cs.uni.wroc.pl).
 
-Życzymy inspiracji i powodzenia w rozwiązywaniu zadań!
+We wish you inspiration and good luck with the tasks!
+
