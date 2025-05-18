@@ -5,8 +5,8 @@ import shutil
 import zipfile
 import gdown
 
-def download_and_replace_data(train=("1gEV52fT3luVkTU_Qf-aTd2hWj-7rYCpQ", "train_data.zip"),
-                              valid=("1JDI4nWtIYlBp56QPbS3lsGyxZA9vHw5t", "valid_data.zip")):
+def download_and_replace_data(train=("1OXfB1bwnOf8hHXA5Affz_feAjja_99MG", "train_data.zip"),
+                              valid=("1ErNoW6Xa3ItCCGAiB-UCwq1Bx9l89Iwf", "valid_data.zip")):
     GDRIVE_DATA = [train, valid]
     for file_id, zip_name in GDRIVE_DATA:
         folder_name = zip_name.split(".")[0]  # Assuming folder name is the same as the file name without '.zip'
