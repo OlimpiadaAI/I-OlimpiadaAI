@@ -86,6 +86,9 @@ The repository uses the following licensed resources:
 }
 ```
 
+- **Task materials** (descriptions, educational content) - available under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. This license does not cover the resources listed above, which remain under their own licenses.
+
+  
 ## Contact
 
 For questions or concerns, please contact us via email: [oai@cs.uni.wroc.pl](mailto:oai@cs.uni.wroc.pl).
