@@ -86,6 +86,8 @@ Repozytorium korzysta z następujących zasobów objętych licencjami:
 }
 ```
 
+- **Treści zadań** (opisy, materiały dydaktyczne) - udostępnione na licencji [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Licencja ta nie obejmuje zasobów wymienionych powyżej, które pozostają na swoich własnych licencjach.
+
 ## Kontakt
 
 W razie pytań lub wątpliwości, prosimy o kontakt przez e-mail: [oai@cs.uni.wroc.pl](mailto:oai@cs.uni.wroc.pl).
